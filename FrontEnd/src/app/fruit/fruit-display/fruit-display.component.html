@@ -1,0 +1,6 @@
+<div *ngFor="let fruit of fruits" class="fruit-card">
+    {{fruit.id}}
+    {{fruit.name}}
+    <button (click)="ondelete(fruit._id)" class="btn-danger delete-button">Delete</button>
+    </div>
+    

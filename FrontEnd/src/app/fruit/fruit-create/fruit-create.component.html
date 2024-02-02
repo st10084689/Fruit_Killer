@@ -1,0 +1,23 @@
+<form (submit)="onaddfruit(addFruit)" #addFruit="ngForm" class="card text-white bg-primary mb-3 margins">
+    <input type= "text"
+    ngModel name= "enteredID"
+    placeholder="Fruit ID"
+    required
+    style="margin-top: 10px"
+    class=" col-form-label"
+    minlength="1"
+    pattern="^[a-zA-Z0-9\s_-]+$"
+    #enteredID="ngModel"
+    />
+    <input type="text"
+    ngModel name="enteredName"
+    placeholder="Fruit Name"
+    required
+    minlength="1"
+    class=" col-form-label"
+    style="margin-top: 10px"
+    pattern="^[a-zA-Z0-9\s_-]+$"
+    #enteredName="ngModel"/>
+    
+    <button type = "submit" class="btn btn-info" style="margin-top: 10px"> Add Fruit</button>
+    </form>
